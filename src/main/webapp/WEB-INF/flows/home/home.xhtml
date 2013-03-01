@@ -1,0 +1,34 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/ui.xhtml">
+	<ui:define name="content">
+		<h:form id="form">
+			<p:panel header="Tis a home page">
+				<p:fieldset legend="This is a field set">
+					<h:panelGrid columns="2" columnClasses="label">
+						<p:outputLabel for="input" value="output" />
+						<p:inputText id="input"  size="60" />
+						<p:outputLabel for="input2" value="output2:" />
+						<p:inputText id="input2" size="60" />
+						<p:outputLabel for="status" value="Status:" />
+						<p:selectOneMenu id="status"  size="50">
+								<f:selectItem itemValue="" itemLabel="Todos" />
+								<f:selectItem itemValue="S" itemLabel="site" />
+								<f:selectItem itemValue="ST" itemLabel="system" />
+								<f:selectItem itemValue="SV" itemLabel="service" />
+						</p:selectOneMenu>
+						<h:panelGroup />
+						<p:commandButton icon="ui-icon-search" value="Submit"
+							 styleClass="btn-primary" />
+					</h:panelGrid>
+				</p:fieldset>
+			</p:panel>
+			<p:spacer height="3" />
+						<p:spacer height="3" />
+		</h:form>
+	</ui:define>
+</ui:composition>
+
