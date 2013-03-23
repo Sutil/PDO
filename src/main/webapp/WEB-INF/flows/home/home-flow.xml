@@ -8,28 +8,7 @@
 	<persistence-context />
 
 	<view-state id="home">
-<!-- 		<on-entry> -->
-<!-- 			<evaluate expression="comparadorController.novoFiltro()" -->
-<!-- 				result="viewScope.filtro" /> -->
-<!-- 		</on-entry> -->
-<!-- 		<on-render> -->
-<!-- 			<evaluate expression="comparadorController.carregarQueue(filtro)" -->
-<!-- 				result="viewScope.diferencas" result-type="dataModel" /> -->
-<!-- 		</on-render> -->
-<!-- 		<transition on="filtrar"> -->
-<!-- 			<evaluate expression="comparadorController.carregarQueue(filtro)" -->
-<!-- 				result="viewScope.diferencas" result-type="dataModel" /> -->
-<!-- 		</transition> -->
-			
-<!-- 		<transition on="atualizar"> -->
-<!-- 			<evaluate expression="comparadorController.carregarQueue(filtro)" -->
-<!-- 				result="viewScope.diferencas" result-type="dataModel" /> -->
-<!-- 		</transition> -->
 
-<!-- 		<transition on="integrar"> -->
-<!-- 			<evaluate -->
-<!-- 				expression="comparadorController.integrar(diferencas.selectedRow)" /> -->
-<!-- 		</transition> -->
 	</view-state>
 
 	<end-state id="ok" commit="true" />
