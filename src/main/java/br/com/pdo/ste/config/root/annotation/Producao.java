@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 import org.springframework.context.annotation.Profile;
 
-@Profile("morena_rosa")
+@Profile("pdo")
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Producao {
